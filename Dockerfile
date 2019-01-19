@@ -1,8 +1,3 @@
 FROM nginx:1-alpine
-
-COPY ./nginx.conf /etc/nginx/conf.d/nginx.conf
-
+COPY ./ftnginx-test.conf /etc/nginx/conf.d/ftnginx.conf
 EXPOSE 3000
-
-CMD ["nginx"]
-
